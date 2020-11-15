@@ -2,7 +2,7 @@
   "name": "movie-api",
   "version": "1.0.0",
   "description": "## Instructions",
-  "main": "movies.js",
+  "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/nodemon index.js",
     "lint": "./node_modules/.bin/eslint --format codeframe .",
