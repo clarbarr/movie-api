@@ -1,13 +1,17 @@
 const express = require('express');
 const movies = require('./movies');
+const {
+  getAllMovies,
+  getMovieByTitle,
+  getMovieByDirector,
+} = require('./controller/movies');
 
-// console.log(movies);
 const app = express();
 
-app.get('/', (request, response) => {
-  return response.send(movies);
-});
+app.get('/', getAllMovies);
 
-app.listen(5000, () => {
-  console.log('Listening on port 5000 .....');
+app.get('/:title', getMovieByTitle);
+app.get('/:director', getMovieByDirector);
+app.listen(8000, () => {
+  console.log('Listening on port 8000 .....');
 });

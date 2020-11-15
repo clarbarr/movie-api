@@ -8,7 +8,7 @@ In the initial commit to this project, you have been provided with data for the 
 
 ### Get All
 
-**GET** `http://localhost:1337/movies`
+**GET** `http://localhost:1337/movies`o
 
 **Response**
 ```JSON
